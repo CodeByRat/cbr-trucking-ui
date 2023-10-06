@@ -12,8 +12,14 @@ const TruckRental: React.FC<TruckRentalProps> = ({ img }) => {
       <RentalCard
         vehicleName="Jobuilt Hauler"
         img={hauler}
-        upgrades={{ brakes: "d", chassis: "d", engine: "d", tires: "a" }}
+        upgrades={{
+          brakes: "d",
+          chassis: "d",
+          engine: "d",
+          tires: "a",
+        }}
         costPerHour={1000}
+        towCapacity={80000}
       />
     </section>
   );

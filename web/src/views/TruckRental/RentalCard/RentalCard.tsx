@@ -1,15 +1,15 @@
 import Button from "../../../components/Button/Button";
 import Card from "../../../components/Card/Card";
 import MoneyText from "../../../components/MoneyText/MoneyText";
-import "./RentalCard.css";
-import hauler from "../../../images/hauler.png";
 import { VehicleData } from "../../../types";
+import "./RentalCard.css";
 
 interface RentalCardProps {
   vehicleName: string;
   img: string;
   upgrades: VehicleData;
   costPerHour: number;
+  towCapacity: number;
 }
 
 const formatObject = (obj: VehicleData) => {
@@ -26,6 +26,7 @@ const RentalCard: React.FC<RentalCardProps> = ({
   img,
   upgrades,
   costPerHour,
+  towCapacity,
 }) => {
   return (
     <Card>
@@ -34,7 +35,9 @@ const RentalCard: React.FC<RentalCardProps> = ({
         <aside>
           <h3>{vehicleName}</h3>
           <p>{formatObject(upgrades)}</p>
-          <p className="weight-text">Tow Capacity 80,000</p>
+          <p className="weight-text">
+            Tow Capacity {towCapacity.toLocaleString("en-US")}
+          </p>
         </aside>
         <section className="rental-info">
           <div className="cost-info-text">
