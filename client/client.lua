@@ -3,10 +3,16 @@ local function toggleNuiFrame(shouldShow)
   SendReactMessage('setVisible', shouldShow)
 end
 
-RegisterCommand('show-nui', function()
+RegisterCommand('show-nui', function(source, args, rawCommand)
   toggleNuiFrame(true)
+  SendReactMessage('open-menu', 'Truck Rental')
   debugPrint('Show NUI frame')
-end)
+end, false)
+
+RegisterCommand('truck-rental', function()
+  toggleNuiFrame(true)
+  SendReactMessage('open-menu', 'truck-rental')
+end, false)
 
 RegisterNUICallback('hideFrame', function(_, cb)
   toggleNuiFrame(false)

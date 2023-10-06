@@ -1,0 +1,32 @@
+.rental-img {
+    height: 100%;
+    width: 26%;
+}
+
+.truck-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.truck-info .button {
+    color: white;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.weight-text {
+    margin-top: 30px;
+}
+
+.rental-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cost-info-text {
+    margin-top: 8px;
+    color: #14DC58;
+}

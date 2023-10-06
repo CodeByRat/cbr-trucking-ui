@@ -1,0 +1,11 @@
+.money-text {
+    font-weight: 600;
+}
+
+.money-text__positive {
+    color: #14DC58;
+}
+
+.money-text__negative {
+    color: #DC143C;
+}

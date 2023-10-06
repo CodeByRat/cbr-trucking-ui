@@ -14,13 +14,25 @@ pre {
   line-height:140%;
 }
 
-.popup-thing {
-  background: #282c34;
-  border-radius: 10px;
-  width: 500px;
-  height: 400px;
+.app-window {
+  background: #0E1014;
+  height: 800px;
+  max-height: 800px;
+  width: 848px;
+  max-width: 848px;
+  border-radius: 8px;
+}
+
+.app-header {
+  background: #153575;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  height: 120px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.app-header h1 {
+  font-size: 2em;
+  font-weight:bold;
 }
